@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+
+    <!-- Bootstrap CSS (opcional, porque lo usas en el JSX original) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+    <style>
+        .site_header {
+            position: relative;
+            width: 100%;
+            transition: all 0.3s ease-in-out;
+            z-index: 999;
+        }
+
+        .site_header.sticky {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .site_logo img {
+            max-height: 50px;
+        }
+
+        .main_menu_list .nav-link {
+            cursor: pointer;
+        }
+
+        .ico_btn_outline {
+            display: inline-flex;
+            align-items: center;
+            border: 1px solid #000;
+            padding: 6px 12px;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .ico_btn_outline:hover {
+            background: #000;
+            color: #fff;
+        }
+
+        .ico_btn_outline .btn_icon {
+            margin-right: 6px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="site_header">
+        <div class="nav_wrapper">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <!-- LOGO -->
+                    <div class="col-lg-3 col-5 d-flex align-items-center">
+                        <div class="site_logo">
+                            <a href="/" onclick="scrollToTop()" class="site_link">
+                                <img src="/public/images/site_logo/site_logo_1.svg" alt="ICO Site Logo">
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- NAVIGATION -->
+                    <div class="col-lg-6 col-2">
+                        <nav class="main_menu navbar navbar-expand-lg">
+                            <div class="main_menu_inner collapse navbar-collapse justify-content-center"
+                                id="main_menu_dropdown">
+                                <ul class="main_menu_list navbar-nav text-uppercase main-menu">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="/" id="homes_submenu" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Home
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="homes_submenu">
+                                            <li><a class="dropdown-item" href="/home_ico">Coinlye ICO</a></li>
+                                            <li><a class="dropdown-item" href="/home_memecoin">Memecoin</a></li>
+                                            <li><a class="dropdown-item" href="/home_pepecoin">Pepecoin</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="nav-link" href="#id_ico_about_section">About ICO</a></li>
+                                    <li><a class="nav-link" href="#id_ico_service_section">Features</a></li>
+
+                                    <!-- HELP MENU -->
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="help_submenu" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Help
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="help_submenu">
+                                            <li><a class="dropdown-item" href="#id_ico_roadmap_section">Roadmap</a></li>
+                                            <li class="dropdown dropend">
+                                                <a class="dropdown-item dropdown-toggle" href="#" id="blog_submenu"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Blog
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="blog_submenu">
+                                                    <li><a class="dropdown-item" href="/blog">Blogs</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="/blog-single/How-Our-Unique-Tokenomics-Ensures-Sustainable-Growth-and-Value">Blog
+                                                            Details</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a class="dropdown-item" href="/contact">Help Center</a></li>
+                                            <li class="dropdown dropend">
+                                                <a class="dropdown-item dropdown-toggle" href="#" id="register_submenu"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    My Account
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="register_submenu">
+                                                    <li><a class="dropdown-item" href="/sign_in">Sign In</a></li>
+                                                    <li><a class="dropdown-item" href="/sign_up">Sign Up</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="nav-link" href="/contact">Contact</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+
+                    <!-- LOGIN + MOBILE MENU -->
+                    <div class="col-lg-3 col-5">
+                        <ul class="btns_group unordered_list p-0 justify-content-end d-flex align-items-center">
+                            <li class="d-lg-none me-3">
+                                <button class="mobile_menu_btn btn" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#main_menu_dropdown" aria-expanded="false">
+                                    <i class="far fa-bars"></i>
+                                </button>
+                            </li>
+                            <li>
+                                <a href="/sign_in" class="ico_btn_outline">
+                                    <span class="btn_icon"><i class="fa-solid fa-user"></i></span>
+                                    <span class="btn_label">Login</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Dummy Sections for Scroll -->
+    <section id="id_ico_about_section" style="height:600px; background:#eee; padding:40px;">About ICO Section</section>
+    <section id="id_ico_service_section" style="height:600px; background:#ddd; padding:40px;">Features Section</section>
+    <section id="id_ico_roadmap_section" style="height:600px; background:#ccc; padding:40px;">Roadmap Section</section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Sticky header effect
+        window.addEventListener("scroll", function () {
+            const header = document.querySelector(".site_header");
+            if (window.scrollY > 80) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        });
+
+        // Scroll to top on logo click
+        function scrollToTop() {
+            window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+        }
+    </script>
+</body>
+
+</html>
