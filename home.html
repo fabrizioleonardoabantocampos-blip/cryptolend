@@ -10,50 +10,42 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- FontAwesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="public/home/css/home.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dela+Gothic+One&family=Lilita+One&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet" />
 
-    <style>
-        .site_header {
-            position: relative;
-            width: 100%;
-            transition: all 0.3s ease-in-out;
-            z-index: 999;
-        }
+<!-- import "react-toastify/dist/ReactToastify.min.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../node_modules/react-modal-video/scss/modal-video.scss';
+import GlobalAOSProvider from "../GlobalAOSProvider/GlobalAOSProvider ";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'; -->
+<!-- import 'swiper/css';
+import 'swiper/css/pagination'; -->
+<link rel="stylesheet" href="public/home/styles/fontawesome.css">
+<link rel="stylesheet" href="public/home/styles/themify-icons.css">
+<link rel="stylesheet" href="public/home/styles/animate.min.css">
+<link rel="stylesheet" href="public/home/styles/cursor.css">
+<link rel="stylesheet" href="public/home/styles/style.css">
+<link rel="stylesheet" href="public/home/styles/slick-carousel.css">
+<link rel="stylesheet" href="public/home/styles/slick-carousel-theme.css">
+<!-- <link rel="stylesheet" href="public/home/styles/">
+<link rel="stylesheet" href="public/home/styles/">
+<link rel="stylesheet" href="public/home/styles/"> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
-        .site_header.sticky {
-            position: fixed;
-            top: 0;
-            left: 0;
-            background: #fff;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
 
-        .site_logo img {
-            max-height: 50px;
-        }
 
-        .main_menu_list .nav-link {
-            cursor: pointer;
-        }
 
-        .ico_btn_outline {
-            display: inline-flex;
-            align-items: center;
-            border: 1px solid #000;
-            padding: 6px 12px;
-            border-radius: 4px;
-            text-decoration: none;
-            transition: 0.3s;
-        }
 
-        .ico_btn_outline:hover {
-            background: #000;
-            color: #fff;
-        }
 
-        .ico_btn_outline .btn_icon {
-            margin-right: 6px;
-        }
-    </style>
+
+
 </head>
 
 <body>
@@ -67,8 +59,8 @@
                     <!-- LOGO -->
                     <div class="col-lg-3 col-5 d-flex align-items-center">
                         <div class="site_logo">
-                            <a href="/" onclick="scrollToTop()" class="site_link">
-                                <img src="/public/images/site_logo/site_logo_1.svg" alt="ICO Site Logo">
+                            <a href="home.html" onclick="scrollToTop()" class="site_link">
+                                <img src="public/homepublic/home/images/site_logo/site_logo_1.svg" alt="ICO Site Logo">
                             </a>
                         </div>
                     </div>
@@ -142,9 +134,9 @@
                                 </button>
                             </li>
                             <li>
-                                <a href="/sign_in" class="ico_btn_outline">
+                                <a href="index.html" class="ico_btn_outline">
                                     <span class="btn_icon"><i class="fa-solid fa-user"></i></span>
-                                    <span class="btn_label">Login</span>
+                                    <span class="btn_label">Dashboard</span>
                                 </a>
                             </li>
                         </ul>
@@ -156,12 +148,564 @@
     </header>
 
     <!-- Dummy Sections for Scroll -->
-    <section id="id_ico_about_section" style="height:600px; background:#eee; padding:40px;">About ICO Section</section>
-    <section id="id_ico_service_section" style="height:600px; background:#ddd; padding:40px;">Features Section</section>
+    <section class="ico_hero_section text-center"
+        style="background-image: url('public/home/images/shapes/shape_net_ico_hero_section_bg.svg');">
+        <div class="container">
+
+            <!-- Título -->
+            <h1 class="hero_title">ICO Token Sale at a Glance</h1>
+
+            <!-- Botones -->
+            <ul class="btns_group list-unstyled d-flex justify-content-center">
+                <li>
+                    <a href="/token" class="ico_creative_btn">
+                        <span class="btn_wrapper">Purchase a Token</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/about" class="ico_creative_btn">
+                        <span class="btn_wrapper">Read Documents</span>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Countdown y progreso -->
+            <div class="ico_countdown_progress_box">
+                <h2 class="highlight_title mb-3">Start buy coinlye now!</h2>
+
+                <!-- Countdown -->
+                <div class="countdownbg" style="background-image: url('/images/shapes/shape_bg_ico_countdown.svg');">
+                    <div id="countdown">
+                        <div><span id="days">00</span>d</div>
+                        <div><span id="hours">00</span>h</div>
+                        <div><span id="minutes">00</span>m</div>
+                        <div><span id="seconds">00</span>s</div>
+                    </div>
+                </div>
+
+                <!-- Progress bar -->
+                <div class="ico_progress">
+                    <ul class="progress_range_step list-unstyled d-flex justify-content-between">
+                        <li>Soft Cap: $1.75m</li>
+                        <li>Hard Cap: $4.75m</li>
+                        <li>Bonus</li>
+                    </ul>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                            aria-valuemax="100"></div>
+                    </div>
+                    <ul class="progress_value list-unstyled d-flex justify-content-between">
+                        <li>Minimum Purchase: 200 ICOX</li>
+                        <li>Raised so far: $1,830,985</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Shapes decorativos -->
+        <div class="shape_bottom">
+            <img src="public/home/images/shapes/shape_ico_hero_section_bottom.svg" alt="Bottom Shape">
+        </div>
+        <div class="decoration_item shape_globe">
+            <img src="public/home/images/shapes/shape_globe.webp" alt="Shape Globe">
+        </div>
+        <div class="decoration_item shape_coin">
+            <img src="public/home/images/shapes/shape_coin.webp" alt="Shape Coin">
+        </div>
+    </section>
+    <section class="partner_section">
+        <div class="container-fluid text-center">
+            <div class="ico_heading_block">
+                <h2 class="highlight_title">Our top Partner</h2>
+            </div>
+
+            <div class="partner_logo_carousel">
+                <div class="partner_track">
+                    <!-- Logos (duplicados para loop infinito) -->
+                    <div class="ico_partner_logo">
+                        <a class="logo_wrap" href="/">
+                            <img src="public/home/images/partners/partner_logo_1.svg" alt="Partner 1">
+                            <span class="dot_1"></span><span class="dot_2"></span><span class="dot_3"></span><span
+                                class="dot_4"></span>
+                        </a>
+                    </div>
+                    <div class="ico_partner_logo">
+                        <a class="logo_wrap" href="/">
+                            <img src="public/home/images/partners/partner_logo_2.svg" alt="Partner 2">
+                            <span class="dot_1"></span><span class="dot_2"></span><span class="dot_3"></span><span
+                                class="dot_4"></span>
+                        </a>
+                    </div>
+                    <div class="ico_partner_logo">
+                        <a class="logo_wrap" href="/">
+                            <img src="public/home/images/partners/partner_logo_3.svg" alt="Partner 3">
+                            <span class="dot_1"></span><span class="dot_2"></span><span class="dot_3"></span><span
+                                class="dot_4"></span>
+                        </a>
+                    </div>
+                    <div class="ico_partner_logo">
+                        <a class="logo_wrap" href="/">
+                            <img src="public/home/images/partners/partner_logo_4.svg" alt="Partner 4">
+                            <span class="dot_1"></span><span class="dot_2"></span><span class="dot_3"></span><span
+                                class="dot_4"></span>
+                        </a>
+                    </div>
+                    <div class="ico_partner_logo">
+                        <a class="logo_wrap" href="/">
+                            <img src="public/home/images/partners/partner_logo_5.svg" alt="Partner 5">
+                            <span class="dot_1"></span><span class="dot_2"></span><span class="dot_3"></span><span
+                                class="dot_4"></span>
+                        </a>
+                    </div>
+                    <div class="ico_partner_logo">
+                        <a class="logo_wrap" href="/">
+                            <img src="public/home/images/partners/partner_logo_6.svg" alt="Partner 6">
+                            <span class="dot_1"></span><span class="dot_2"></span><span class="dot_3"></span><span
+                                class="dot_4"></span>
+                        </a>
+                    </div>
+                    <div class="ico_partner_logo">
+                        <a class="logo_wrap" href="/">
+                            <img src="public/home/images/partners/partner_logo_5.svg" alt="Partner 7">
+                            <span class="dot_1"></span><span class="dot_2"></span><span class="dot_3"></span><span
+                                class="dot_4"></span>
+                        </a>
+                    </div>
+                    <div class="ico_partner_logo">
+                        <a class="logo_wrap" href="/">
+                            <img src="public/home/images/partners/partner_logo_2.svg" alt="Partner 8">
+                            <span class="dot_1"></span><span class="dot_2"></span><span class="dot_3"></span><span
+                                class="dot_4"></span>
+                        </a>
+                    </div>
+
+                    <!-- Duplicados para scroll infinito -->
+                    <div class="ico_partner_logo">
+                        <a class="logo_wrap" href="/">
+                            <img src="public/home/images/partners/partner_logo_1.svg" alt="Partner 1">
+                            <span class="dot_1"></span><span class="dot_2"></span><span class="dot_3"></span><span
+                                class="dot_4"></span>
+                        </a>
+                    </div>
+                    <div class="ico_partner_logo">
+                        <a class="logo_wrap" href="/">
+                            <img src="public/home/images/partners/partner_logo_2.svg" alt="Partner 2">
+                            <span class="dot_1"></span><span class="dot_2"></span><span class="dot_3"></span><span
+                                class="dot_4"></span>
+                        </a>
+                    </div>
+                    <!-- ... repite según necesites -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="id_ico_service_section" style="height:600px; background:#ddd; padding:40px;">
+        <div class="container">
+            <div class="row" style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:40px;">
+                <!-- Columna izquierda -->
+                <div class="col-lg-6" style="flex:1; min-width:300px;">
+                    <div class="ico_heading_block">
+                        <h2>Introducing Coinlye ICO</h2>
+                    </div>
+                    <ul class="about_ico_block">
+                        <li>
+                            <h3>What is a Coinlye ICO?</h3>
+                            <p>
+                                Coinlye is a decentralized digital currency enabling peer-to-peer transactions without
+                                intermediaries.
+                                Introduced in 2022 by Satoshi Nakamoto, it is the first cryptocurrency, known for secure
+                                and borderless exchanges.
+                            </p>
+                        </li>
+                        <li>
+                            <h3>Why it’s needed?</h3>
+                            <p>
+                                Coinlye is needed to provide a decentralized alternative to traditional financial
+                                systems.
+                                It allows secure, transparent, and borderless transactions without relying on banks or
+                                governments.
+                            </p>
+                        </li>
+                        <li>
+                            <h3>Why wealth?</h3>
+                            <p>
+                                Coinlye is considered a form of wealth due to its scarcity, decentralization, and
+                                potential for long-term value growth.
+                                Its limited supply (21 million coins) makes it a store of value.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Columna derecha -->
+                <div class="col-lg-5" style="flex:1; min-width:300px;">
+                    <ul class="about_ico_block">
+                        <li>
+                            <h3>Market Opportunity</h3>
+                            <p>
+                                Coinlye's market opportunity stems from its growing adoption as a digital asset and
+                                payment method.
+                                As interest from investors, businesses, and institutions increases, its finance and
+                                retail reach expands, boosting value and utility.
+                            </p>
+                        </li>
+                    </ul>
+
+                    <div class="ico_about_image">
+                        <!-- Ripple -->
+                        <div class="ripple_shape">
+                            <svg viewBox="0 0 501 455" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M500.5 227.5C500.5 352.824 388.618 454.5 250.5 454.5C112.382 454.5 0.5 352.824 0.5 227.5C0.5 102.176 112.382 0.5 250.5 0.5C388.618 0.5 500.5 102.176 500.5 227.5Z"
+                                    stroke="#2A246D" />
+                                <path
+                                    d="M463.5 247.5C463.5 361.81 368.15 454.5 250.5 454.5C132.85 454.5 37.5 361.81 37.5 247.5C37.5 133.19 132.85 40.5 250.5 40.5C368.15 40.5 463.5 133.19 463.5 247.5Z"
+                                    stroke="#2A246D" />
+                                <path
+                                    d="M425.5 268C425.5 371.031 347.12 454.5 250.5 454.5C153.88 454.5 75.5 371.031 75.5 268C75.5 164.969 153.88 81.5 250.5 81.5C347.12 81.5 425.5 164.969 425.5 268Z"
+                                    stroke="#2A246D" />
+                                <path
+                                    d="M379.5 268C379.5 343.97 321.715 405.5 250.5 405.5C179.285 405.5 121.5 343.97 121.5 268C121.5 192.03 179.285 130.5 250.5 130.5C321.715 130.5 379.5 192.03 379.5 268Z"
+                                    stroke="#2A246D" />
+                            </svg>
+                        </div>
+
+                        <!-- Imagen de la moneda -->
+                        <div class="coin_image">
+                            <img src="public/home/images/about/about_image.svg" alt="About Coinlye">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sombras -->
+        <div class="decoration_item shape_shadow_1">
+            <img src="public/home/images/shapes/shape_poligon.svg" alt="Shape Shadow">
+        </div>
+        <div class="decoration_item shape_shadow_2">
+            <img src="public/home/images/shapes/shape_poligon.svg" alt="Shape Shadow">
+        </div>
+    </section>
+    <section class="problem_solution_section section_space pb-0">
+        <div class="container">
+
+            <!-- Título -->
+            <div class="ico_heading_block text-center">
+                <h2 class="heading_text mb-0">Coinlye ICO Problem &amp; Solution</h2>
+            </div>
+
+            <!-- Contenido -->
+            <div class="ico_problem_solution_table">
+                <div class="column_wrapper">
+
+                    <!-- ICO Problem -->
+                    <div class="column_problem">
+                        <h3 class="heading_text">
+                            <span class="icon">
+                                <img src="public/home/icons/icon_man_question.svg" alt="Icon Man With Question">
+                            </span>
+                            <span class="text">ICO Problem</span>
+                        </h3>
+                        <ul class="iconlist_block unordered_list_block">
+                            <li>
+                                <span class="iconlist_icon">
+                                    <img src="public/home/icons/icon_check.svg" alt="Icon Check">
+                                </span>
+                                <span class="iconlist_label">
+                                    Identify the Issue.
+                                    <small class="iconlist_info">We ensure transparency with clear updates.</small>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="iconlist_icon">
+                                    <img src="public/home/icons/icon_check.svg" alt="Icon Check">
+                                </span>
+                                <span class="iconlist_label">
+                                    Impact of the Problem.
+                                    <small class="iconlist_info">The problem in an ICO attracts investor
+                                        confidence.</small>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="iconlist_icon">
+                                    <img src="public/home/icons/icon_check.svg" alt="Icon Check">
+                                </span>
+                                <span class="iconlist_label">
+                                    Reduced Investment.
+                                    <small class="iconlist_info">Less trust means fewer investments.</small>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="iconlist_icon">
+                                    <img src="public/home/icons/icon_check.svg" alt="Icon Check">
+                                </span>
+                                <span class="iconlist_label">
+                                    Scaling and Obsolete Tool.
+                                    <small class="iconlist_info">Limited scalability hinders growth and
+                                        expansion.</small>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- ICO Solution -->
+                    <div class="column_solution">
+                        <h3 class="heading_text">
+                            <span class="icon">
+                                <img src="public/home/icons/icon_bulb.svg" alt="Icon Bulb">
+                            </span>
+                            <span class="text">ICO Solution</span>
+                        </h3>
+                        <ul class="iconlist_block unordered_list_block">
+                            <li>
+                                <span class="iconlist_icon">
+                                    <img src="public/home/icons/icon_check.svg" alt="Icon Check">
+                                </span>
+                                <span class="iconlist_label">
+                                    Introduce the Project and Token.
+                                    <small class="iconlist_info">Our ICO Vision is building a Decentralized Ad
+                                        Network.</small>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="iconlist_icon">
+                                    <img src="public/home/icons/icon_check.svg" alt="Icon Check">
+                                </span>
+                                <span class="iconlist_label">
+                                    Key Features or Innovations.
+                                    <small class="iconlist_info">Advanced tech, top security, and smooth
+                                        scalability.</small>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="iconlist_icon">
+                                    <img src="public/home/icons/icon_check.svg" alt="Icon Check">
+                                </span>
+                                <span class="iconlist_label">
+                                    Benefits to Users and Investors.
+                                    <small class="iconlist_info">Transparency, security, and growth potential.</small>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="iconlist_icon">
+                                    <img src="public/home/icons/icon_check.svg" alt="Icon Check">
+                                </span>
+                                <span class="iconlist_label">
+                                    Global Single-Platform.
+                                    <small class="iconlist_info">Seamless access and transactions worldwide.</small>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ico_feature_section section_space section_decoration">
+        <div class="container">
+            <div class="row justify-content-lg-between">
+
+                <!-- Left Side - Features List -->
+                <div class="col-lg-5">
+                    <div class="ico_heading_block">
+                        <h2 class="heading_text mb-0">Why Coinlye is Worth Buying Today?</h2>
+                    </div>
+                    <ul class="ico_features_group unordered_list_block">
+                        <li>
+                            <div class="ico_iconbox_icon_left">
+                                <div class="iconbox_icon">
+                                    <img src="public/home/icons/icon_dollar.svg" alt="Icon Dollar">
+                                </div>
+                                <div class="iconbox_info">
+                                    <h3 class="iconbox_title">Expected Investment Value</h3>
+                                    <p class="iconbox_description mb-0">180,000 $ ROI = 360%</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ico_iconbox_icon_left">
+                                <div class="iconbox_icon">
+                                    <img src="public/home/icons/icon_chart.svg" alt="Icon Chart">
+                                </div>
+                                <div class="iconbox_info">
+                                    <h3 class="iconbox_title">Expected Investment Value</h3>
+                                    <p class="iconbox_description mb-0">180,000 $ ROI = 360%</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ico_iconbox_icon_left">
+                                <div class="iconbox_icon">
+                                    <img src="public/home/icons/icon_gift.svg" alt="Icon Gift">
+                                </div>
+                                <div class="iconbox_info">
+                                    <h3 class="iconbox_title">Expected Investment Value</h3>
+                                    <p class="iconbox_description mb-0">180,000 $ ROI = 360%</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Right Side - Investment Details -->
+                <div class="col-lg-6">
+                    <ul class="ico_investment_value unordered_list justify-content-md-between">
+                        <li>
+                            <h4 class="heading_text">Amount Invested</h4>
+                            <div class="investment_value">
+                                <span class="odometer" data-count="60000">0</span>
+                                <span>$</span>
+                            </div>
+                        </li>
+                        <li>
+                            <h4 class="heading_text">Quantity Coinlye</h4>
+                            <div class="investment_value">
+                                <span class="odometer" data-count="6000">0</span>
+                                <span>Coinlye</span>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <!-- Coin Purchase Price -->
+                    <div class="ico_coin_purchase_price">
+                        <p class="purchase_price_rate mb-0 text-secondary">
+                            Purchase Price Coinlye <strong>0.166$</strong>
+                        </p>
+                        <div class="chart_image">
+                            <img src="images/shapes/shape_chart.svg" alt="Shape Chart">
+                        </div>
+                        <div class="live_values">
+                            <span>100$</span>
+                            <span>100.000$</span>
+                        </div>
+                    </div>
+
+                    <!-- Calculation Range -->
+                    <div class="ico_calculation_range">
+                        <div class="live_values">
+                            <span>Calculation Time</span>
+                            <span>Q3 2025</span>
+                        </div>
+                        <div class="range_image">
+                            <img src="images/shapes/shape_range.svg" alt="Shape Range">
+                        </div>
+                        <div class="live_values">
+                            <span>100$</span>
+                            <span>100.000$</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Decorations -->
+        <div class="decoration_item shape_shadow_1">
+            <img src="images/shapes/shape_poligon.svg" alt="Shape Color Shadow">
+        </div>
+        <div class="decoration_item shape_shadow_2">
+            <img src="images/shapes/shape_poligon.svg" alt="Shape Color Shadow">
+        </div>
+    </section>
+
+    <section id="id_ico_service_section1"
+        class="ico_service_section section_space pb-0 section_decoration section_shadow_top">
+        <!-- Shape Divider -->
+        <div class="decoration_item shape_divider_1">
+            <img src="public/home/images/shapes/shape_section_divider_1.svg" alt="Shape Divider">
+        </div>
+
+        <div class="container">
+            <!-- Heading -->
+            <div class="ico_heading_block text-center mt-lg-4" data-aos="fade-up" data-aos-duration="600">
+                <h2 class="heading_text mb-0">Why You Choose Coinlye?</h2>
+            </div>
+
+            <div class="row m-lg-0 justify-content-center">
+                <!-- Center Image -->
+                <div class="col-lg-4 p-lg-0" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                    <div class="ico_service_image">
+                        <img src="public/home/images/services/ico_service_image.webp" alt="ICO Service Icon">
+                    </div>
+                </div>
+
+                <!-- Service 1 -->
+                <div class="col-lg-4 p-lg-0 order-lg-first" data-aos="fade-up" data-aos-duration="600"
+                    data-aos-delay="200">
+                    <div class="ico_iconbox_block">
+                        <div class="iconbox_icon">
+                            <img src="public/home/icons/icon_dollar_2.svg" alt="Universal ATM">
+                        </div>
+                        <div class="iconbox_info">
+                            <h3 class="iconbox_title">Universal ATM</h3>
+                            <p class="iconbox_description mb-0">ATM for stable currency unicast any other currencies.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="col-lg-4 p-lg-0" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
+                    <div class="ico_iconbox_block">
+                        <div class="iconbox_icon">
+                            <img src="public/home/icons/icon_bank_building.svg" alt="Smart Banking Branch">
+                        </div>
+                        <div class="iconbox_info">
+                            <h3 class="iconbox_title">Smart Banking Branch</h3>
+                            <p class="iconbox_description mb-0">KYC handles lender negotiation or insurance procedures.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="col-lg-4 p-lg-0" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
+                    <div class="ico_iconbox_block">
+                        <div class="iconbox_icon">
+                            <img src="public/home/icons/icon_scan.svg" alt="Automation">
+                        </div>
+                        <div class="iconbox_info">
+                            <h3 class="iconbox_title">Automation</h3>
+                            <p class="iconbox_description mb-0">Payment of invoices, create, deposited or integration
+                                for betting offices.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="col-lg-4 p-lg-0" data-aos="fade-up" data-aos-duration="600" data-aos-delay="500">
+                    <div class="ico_iconbox_block">
+                        <div class="iconbox_icon">
+                            <img src="public/home/images/services/icon_pinpoint.png" alt="Decentralization">
+                        </div>
+                        <div class="iconbox_info">
+                            <h3 class="iconbox_title">Decentralization</h3>
+                            <p class="iconbox_description mb-0">All transactions are in a blockchain, each machine is a
+                                network builder.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Background Shapes -->
+        <div class="decoration_item shape_shadow_1">
+            <img src="public/home/images/shapes/shape_poligon.svg" alt="Shape Color Shadow">
+        </div>
+        <div class="decoration_item shape_shadow_2">
+            <img src="public/home/images/shapes/shape_poligon.svg" alt="Shape Color Shadow">
+        </div>
+    </section>
+
+
     <section id="id_ico_roadmap_section" style="height:600px; background:#ccc; padding:40px;">Roadmap Section</section>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
 
     <script>
         // Sticky header effect
@@ -178,6 +722,55 @@
         function scrollToTop() {
             window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
         }
+    </script>
+
+    <script>
+        // Establece una fecha de finalización
+        const countdownDate = new Date("2025-12-31 23:59:59").getTime();
+
+        const timer = setInterval(function () {
+            const now = new Date().getTime();
+            const distance = countdownDate - now;
+
+            if (distance < 0) {
+                clearInterval(timer);
+                document.getElementById("countdown").innerHTML = "EXPIRED";
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerText = days;
+            document.getElementById("hours").innerText = hours;
+            document.getElementById("minutes").innerText = minutes;
+            document.getElementById("seconds").innerText = seconds;
+        }, 1000);
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const counters = document.querySelectorAll(".odometer");
+
+            counters.forEach(counter => {
+                const updateCount = () => {
+                    const target = +counter.getAttribute("data-count");
+                    const count = +counter.innerText;
+                    const increment = target / 200; // velocidad de incremento
+
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + increment);
+                        requestAnimationFrame(updateCount);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+
+                updateCount();
+            });
+        });
+
     </script>
 </body>
 

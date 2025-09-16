@@ -1,0 +1,265 @@
+    .site_header {
+      position: relative;
+      width: 100%;
+      transition: all 0.3s ease-in-out;
+      z-index: 999;
+    }
+    .site_header.sticky {
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: #fff;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .site_logo img {
+      max-height: 50px;
+    }
+    .main_menu_list .nav-link {
+      cursor: pointer;
+    }
+    .ico_btn_outline {
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid #000;
+      padding: 6px 12px;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .ico_btn_outline:hover {
+      background: #000;
+      color: #fff;
+    }
+    .ico_btn_outline .btn_icon {
+      margin-right: 6px;
+    }
+
+    .ico_hero_section {
+      padding: 100px 0;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      color: #fff;
+    }
+    .ico_hero_section .hero_title {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+    .ico_creative_btn {
+      text-decoration: none;
+      display: inline-block;
+      margin: 0 10px;
+    }
+    .btn_wrapper {
+      display: inline-flex;
+      align-items: center;
+      padding: 12px 25px;
+      border: 2px solid #fff;
+      border-radius: 30px;
+      color: #fff;
+      transition: 0.3s;
+    }
+    .btn_wrapper:hover {
+      background: #fff;
+      color: #000;
+    }
+    .ico_countdown_progress_box {
+      background: rgba(0,0,0,0.6);
+      padding: 30px;
+      border-radius: 10px;
+      margin-top: 40px;
+    }
+    .countdownbg {
+      background-size: contain;
+      background-repeat: no-repeat;
+      padding: 20px;
+      margin: 20px 0;
+    }
+    .ico_progress .progress {
+      height: 20px;
+      margin: 15px 0;
+    }
+    .ico_progress .progress-bar {
+      width: 80%; /* Valor estático, cámbialo con JS si quieres */
+      background-color: #28a745;
+    }
+    .shape_bottom, .shape_globe, .shape_coin {
+      position: absolute;
+      z-index: 1;
+    }
+    .shape_bottom {
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .shape_globe {
+      top: 20%;
+      right: 5%;
+    }
+    .shape_coin {
+      bottom: 20%;
+      left: 5%;
+    }
+    /* Countdown simple */
+    #countdown {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+
+     .partner_section {
+      padding: 60px 0;
+      background: #f9f9f9;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .ico_heading_block h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 40px;
+    }
+
+    .partner_logo_carousel {
+      display: flex;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .partner_track {
+      display: flex;
+      width: calc(200%); /* duplicamos para el bucle */
+      animation: scroll 30s linear infinite;
+    }
+
+    .ico_partner_logo {
+      flex: 0 0 auto;
+      width: 180px;
+      margin: 0 20px;
+      position: relative;
+    }
+
+    .ico_partner_logo img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      filter: grayscale(100%);
+      transition: filter 0.3s;
+    }
+
+    .ico_partner_logo img:hover {
+      filter: grayscale(0%);
+    }
+
+    /* Animación para loop infinito */
+    @keyframes scroll {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    /* Puntitos decorativos */
+    .logo_wrap {
+      position: relative;
+      display: inline-block;
+    }
+
+    .logo_wrap span {
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      background: #ff6600;
+      border-radius: 50%;
+    }
+
+    .dot_1 { top: -5px; left: -5px; }
+    .dot_2 { top: -5px; right: -5px; }
+    .dot_3 { bottom: -5px; left: -5px; }
+    .dot_4 { bottom: -5px; right: -5px; }
+   .ico_about_section {
+      position: relative;
+      padding: 80px 0;
+      background: #fff;
+    }
+
+    .ico_heading_block h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .about_ico_block {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .about_ico_block li {
+      margin-bottom: 30px;
+    }
+
+    .about_ico_block h3 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+      color: #2A246D;
+    }
+
+    .about_ico_block p {
+      color: #555;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .ico_about_image {
+      position: relative;
+      text-align: center;
+    }
+
+    .ico_about_image svg {
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+      display: block;
+    }
+
+    .coin_image img {
+      max-width: 300px;
+      margin-top: -280px; /* para que la moneda quede dentro del "ripple" */
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Sombras decorativas */
+    .decoration_item {
+      position: absolute;
+      z-index: -1;
+    }
+
+    .shape_shadow_1 {
+      top: 20%;
+      left: -50px;
+    }
+
+    .shape_shadow_2 {
+      bottom: 10%;
+      right: -50px;
+    }
+
+    .shape_shadow_1 img,
+    .shape_shadow_2 img {
+      width: 150px;
+      opacity: 0.3;
+    }
+
+    @media (max-width: 992px) {
+      .row {
+        display: flex;
+        flex-direction: column;
+      }
+      .coin_image img {
+        margin-top: -200px;
+      }
+    } 
