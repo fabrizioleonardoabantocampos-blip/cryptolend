@@ -38,7 +38,7 @@ ul.wysihtml5-toolbar a.btn{
 	color: inherit;
 }
 ul.wysihtml5-toolbar a:hover.btn{
-	color: #fff;
+	color: #333;
 }
 
 ul.wysihtml5-toolbar a[data-wysihtml5-command=bold] {
