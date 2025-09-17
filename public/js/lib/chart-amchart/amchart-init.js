@@ -8,7 +8,6 @@ $(document).ready(function() {
         "theme": "light",
         "dataDateFormat": "YYYY-MM-DD",
         "precision": 2,
-        "color": "#FFFFFF",
         "valueAxes": [{
             "id": "v1",
             "title": "Sales",
@@ -331,7 +330,7 @@ $(document).ready(function() {
 
         "addClassNames": true,
         "startDuration": 1,
-        "color": "#FFFFFF",
+        //"color": "#FFFFFF",
         "marginLeft": 0,
 
         "categoryField": "date",
@@ -446,8 +445,8 @@ $(document).ready(function() {
             "bulletType": "round",
             "equalWidths": false,
             "valueWidth": 120,
-            "useGraphSettings": true,
-            "color": "#FFFFFF"
+            "useGraphSettings": true
+            //"color": "#FFFFFF"
         }
     });
 
@@ -578,7 +577,6 @@ $(document).ready(function() {
         //                    "theme": "light",
         "addClassNames": true,
         "classNameField": "class",
-        "color": "#FFFFFF",
         "dataProvider": [{
             "value": 4852,
             "class": "color1"
@@ -606,7 +604,6 @@ $(document).ready(function() {
     var chart = AmCharts.makeChart("column", {
         "type": "serial",
         "theme": "light",
-        "color": "#FFFFFF",
         "dataProvider": [{
             "name": "Salauddin",
             "points": 35654,
@@ -679,7 +676,6 @@ $(document).ready(function() {
         "theme": "light",
         "marginRight": 40,
         "marginLeft": 40,
-        "color": "#FFFFFF",
         "autoMarginOffset": 20,
         "dataDateFormat": "YYYY-MM-DD",
         "valueAxes": [{

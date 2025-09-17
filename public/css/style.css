@@ -8,7 +8,7 @@
 @import url(../icons/themify-icons/themify-icons.css);
 @import url(../icons/flag-icon-css/flag-icon.min.css);
 @import url(../icons/material-design-iconic-font/css/materialdesignicons.min.css);
-@import url(../css/lib/bootstrap/bootstrap.min.css);
+@import url(../public/css/lib/bootstrap/bootstrap.min.css);
 @import url(helper.css);
 @import url(spinners.css);
 @import url(animate.css);
@@ -85,18 +85,18 @@ Surjith S M / @surjithctly
 }
 
 body {
-    background: #070713;
+    background: #FAFAFA;
     font-family: 'Roboto', sans-serif;
     margin: 0;
     overflow-x: hidden;
-    color: #abafb3;
+    color: #607d8b;
     font-size: 0.9rem;
 }
 
 html {
     position: relative;
     min-height: 100%;
-    background: #070713;
+    background: #FAFAFA;
 }
 
 a:focus,
@@ -149,7 +149,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: #ffffff;
+    color: #454545;
     font-weight: 500;
 }
 
@@ -250,7 +250,7 @@ h6 {
 }
 
 .page-wrapper {
-    background: #070713;
+    background: #FAFAFA;
     padding-bottom: 60px;
 }
 
@@ -337,7 +337,15 @@ h6 {
 
 .color-muted,
 .text-muted {
-    color: #abafb3;
+    color: #607d8b;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.text-orange {
+    color: #ff5722!important;
 }
 
 
@@ -562,7 +570,7 @@ h6 {
 .header {
     position: relative;
     z-index: 50;
-    background: #0b0c21;
+    background: #FFFFFF;
     box-shadow: 1px 0 5px rgba(0, 0, 0, 0.1);
     z-index: 999;
 }
@@ -579,7 +587,7 @@ h6 {
 .header .top-navbar .navbar-header {
     line-height: 45px;
     text-align: center;
-    background: #10112d;
+    background: #fff;
 }
 
 .header .top-navbar .navbar-header .navbar-brand {
@@ -631,7 +639,7 @@ h6 {
 }
 
 .header .dropdown-menu {
-    background: #0B0C21;
+    background: #FFFFFF;
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
     -webkit-box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
     -moz-box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
@@ -700,7 +708,7 @@ h6 {
 }
 
 .header ul.dropdown-user li a:hover {
-    background: #10112D;
+    background: #fff;
     color: #ddd;
     text-decoration: none;
 }
@@ -726,7 +734,7 @@ h6 {
 }
 
 .search-box .app-search input {
-    background: #0B0C21;
+    background: #FFFFFF;
     width: 100.5%;
     padding: 20px 40px 20px 20px;
     border-radius: 0;
@@ -738,14 +746,14 @@ h6 {
 }
 
 .search-box .app-search input:focus {
-    border-color: #0B0C21;
+    border-color: #FFFFFF;
 }
 
 .search-box .app-search .srh-btn {
     position: absolute;
     top: 23px;
     cursor: pointer;
-    background: #0B0C21;
+    background: #FFFFFF;
     width: 15px;
     height: 15px;
     right: 20px;
@@ -937,7 +945,7 @@ textarea {
 }
 
 .mailbox .header-notify a:hover {
-    background: #10112d;
+    background: #fff;
 }
 
 .mailbox .header-notify a div {
@@ -1108,7 +1116,7 @@ textarea {
 }
 
 .sidebar-nav {
-    background: #0b0c21;
+    background: #FFFFFF;
     padding: 0;
 }
 
@@ -1122,7 +1130,7 @@ textarea {
 }
 
 .sidebar-nav ul li a {
-    color: #abafb3;
+    color: #607d8b;
     padding: 7px 35px 7px 15px;
     display: block;
     font-size: 14px;
@@ -1138,12 +1146,12 @@ textarea {
 }
 
 .sidebar-nav ul li a.active {
-    color: #dddddd;
+    color: #1976d2;
     font-weight: 500;
 }
 
 .sidebar-nav ul li a.active i {
-    color: #dddddd;
+    color: #607d8b;
 }
 
 .sidebar-nav ul li ul {
@@ -1162,7 +1170,7 @@ textarea {
     font-size: 12px;
     margin-bottom: 0;
     padding: 14px 14px 14px 20px;
-    color: #abafb3;
+    color: #607d8b;
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -1195,14 +1203,8 @@ textarea {
     top: 8px;
 }
 
-.sidebar-nav>ul>li>a.active {
-    font-weight: 400;
-    background: #242933;
-    color: #26c6da;
-}
-
 .sidebar-nav>ul>li.active {
-    background: #10112d;
+    background: #fff;
 }
 
 .sidebar-nav>ul>li.active>a {
@@ -1276,7 +1278,7 @@ textarea {
     top: 0;
     z-index: 20;
     padding-top: 60px;
-    background: #0b0c21;
+    background: #FFFFFF;
     -webkit-box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08);
     box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08);
 }
@@ -1327,7 +1329,7 @@ textarea {
         top: 39px;
         width: 200px;
         z-index: 1001;
-        background: #0B0C21;
+        background: #FFFFFF;
         display: none;
         padding-left: 1px;
     }
@@ -1341,7 +1343,7 @@ textarea {
     }
     .sidebar-mini .sidebar-nav #sidebar-menu>li:hover>a {
         width: 260px;
-        background: #0B0C21;
+        background: #FFFFFF;
     }
     .sidebar-mini .sidebar-nav #sidebar-menu>li:hover>a .hide-menu {
         display: inline;
@@ -1454,6 +1456,7 @@ textarea {
 
 .badge-warning {
     background-color: #ffb22b;
+    color: #fff;
 }
 
 .badge-danger {
@@ -1573,14 +1576,13 @@ textarea {
 }
 
 .page-titles {
-    background: #0b0c21;
+    background: #FFFFFF;
     margin: 0 0 30px;
     padding: 15px 10px;
     position: relative;
     z-index: 10;
     -webkit-box-shadow: 1px 0 5px rgba(0, 0, 0, 0.1);
     box-shadow: 1px 0 5px rgba(0, 0, 0, 0.1);
-    border-top: 1px solid #222;
 }
 
 .page-titles h3 {
@@ -1715,7 +1717,7 @@ textarea {
 }
 
 .footer {
-    background: #0b0c21 none repeat scroll 0 0;
+    background: #FFFFFF none repeat scroll 0 0;
     border-top: 1px solid rgba(120, 130, 140, 0.13);
     bottom: 0;
     color: #67757c;
@@ -1983,7 +1985,7 @@ textarea {
 }
 
 .card {
-    background: #0b0c21;
+    background: #FFFFFF;
     margin: 15px 0;
     padding: 12px;
     border: 0 solid rgba(120, 130, 140, 0.13);
@@ -2007,7 +2009,7 @@ textarea {
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
-    color: #fff;
+    color: #454545;
 }
 
 .card-title p {
@@ -2030,7 +2032,7 @@ textarea {
 .vtabs .tabs-vertical li .nav-link {
     border: 0 none;
     border-radius: 4px 0 0 4px;
-    color: #ddd;
+    color: #1976d2;
     margin-bottom: 10px;
 }
 
@@ -2504,8 +2506,9 @@ table.dataTable thead .sorting::after {
 }
 
 .btn {
-    padding: 7px 12px;
+    padding: 7px 10px;
     cursor: pointer;
+    font-size: 15px;
 }
 
 .btn-group label {
@@ -2676,6 +2679,7 @@ table.dataTable thead .sorting::after {
     -webkit-transition: 0.2s ease-in;
     -o-transition: 0.2s ease-in;
     transition: 0.2s ease-in;
+    color: #fff;
 }
 
 .btn-primary:hover {
@@ -2816,6 +2820,7 @@ table.dataTable thead .sorting::after {
     -webkit-transition: 0.2s ease-in;
     -o-transition: 0.2s ease-in;
     transition: 0.2s ease-in;
+    color: #fff;
 }
 
 .btn-success:hover {
@@ -2908,6 +2913,7 @@ table.dataTable thead .sorting::after {
     -webkit-transition: 0.2s ease-in;
     -o-transition: 0.2s ease-in;
     transition: 0.2s ease-in;
+    color: #fff;
 }
 
 .btn-info:hover {
@@ -3102,6 +3108,7 @@ table.dataTable thead .sorting::after {
     -webkit-transition: 0.2s ease-in;
     -o-transition: 0.2s ease-in;
     transition: 0.2s ease-in;
+    color: #fff;
 }
 
 .btn-danger:hover {
@@ -3943,16 +3950,15 @@ table.dataTable thead .sorting::after {
     border: 0px;
 }
 
-.form-addon-icon {
-    position: absolute;
-    right: 35px;
-}
-
 .input-group-addon i {
     position: absolute;
     z-index: 10;
     vertical-align: middle;
     padding: 16px 8px;
+}
+
+.form-type {
+    padding: 0 1.95rem;
 }
 
 .chat-user-search .form-control {
@@ -3963,8 +3969,9 @@ table.dataTable thead .sorting::after {
     display: none;
 }
 
-.form-type {
-    padding: 0 1.95rem;
+.form-addon-icon {
+    position: absolute;
+    right: 35px;
 }
 
 
@@ -4479,7 +4486,7 @@ footer p {
     /*  top: -290px;*/
     margin-bottom: 120px;
     /*  width: 700px;*/
-    background: #070713;
+    background: #FAFAFA;
     padding: 30px;
 }
 
@@ -4525,7 +4532,7 @@ footer p {
 }
 
 .invoice-info h2 {
-    color: #dddddd;
+    color: #444;
     font-size: 14px;
 }
 
@@ -4538,7 +4545,7 @@ footer p {
 }
 
 .title h4 {
-    color: #dddddd;
+    color: #444;
     text-align: right;
 }
 
@@ -4664,7 +4671,7 @@ footer p {
 
 .stat-widget-one .stat-text {
     font-size: 14px;
-    color: #abafb3;
+    color: #607d8b;
 }
 
 .stat-widget-one .stat-digit {
@@ -4683,12 +4690,13 @@ footer p {
 .stat-widget-two .stat-digit {
     font-size: 40px;
     font-weight: 700;
+    color: #dddddd;
 }
 
 .stat-widget-two .stat-text {
     font-size: 17px;
     margin-bottom: 5px;
-    color: #abafb3;
+    color: #607d8b;
 }
 
 .stat-widget-two .progress {
@@ -4797,6 +4805,7 @@ footer p {
 .stat-widget-five .stat-heading {
     text-align: right;
     font-size: 18px;
+    font-weight: 400;
 }
 
 @media (max-width: 1200px) {
@@ -4852,7 +4861,7 @@ footer p {
 
 .stat-widget-seven h3 {
     display: inline-block;
-    color: #fff;
+    color: #454545;
     font-weight: 400;
 }
 
@@ -4883,7 +4892,7 @@ footer p {
 .recent-comment .media-body p {
     margin-bottom: 10px;
     line-height: 16px;
-    color: #abafb3;
+    color: #607d8b;
 }
 
 .recent-comment .comment-date {
@@ -4957,28 +4966,28 @@ footer p {
 }
 
 .form-control {
-    height: 46px;
+    height: 44px;
     border-radius: 0;
     box-shadow: none;
     border: 1px solid rgba(120, 130, 140, 0.13);
     font-family: 'Roboto', sans-serif;
-    background: #070713;
-    color: #ffffff;
+    background: #FAFAFA;
+    color: #000;
 }
 
 .form-control:hover {
     box-shadow: none;
     border: 1px solid rgba(120, 130, 140, 0.13);
-    background: #070713;
-    color: #ffffff;
+    background: #FAFAFA;
+    color: #000;
 }
 
 .form-control.active,
 .form-control:focus {
     box-shadow: none;
     border: 1px solid rgba(120, 130, 140, 0.13);
-    background: #070713;
-    color: #ffffff;
+    background: #FAFAFA;
+    color: #000;
 }
 
 .input-default {
@@ -5192,7 +5201,7 @@ label {
 ----------------------*/
 
 .form-horizontal .control-label {
-    padding: 12px 0 0;
+    padding: 12px 0 0px;
 }
 
 .form-horizontal .form-group {
@@ -5207,7 +5216,7 @@ label {
 
 .form-control:disabled,
 .form-control[readonly] {
-    background-color: #070713;
+    background-color: #FAFAFA;
     opacity: 1;
 }
 
@@ -5237,7 +5246,7 @@ label {
     line-height: 50px;
     cursor: default;
     transition-duration: 0.3s;
-    border-bottom: 1px solid #2d2d2d;
+    border-bottom: 1px solid #e6e9f1;
 }
 
 .message-list li .subject {
@@ -5275,7 +5284,7 @@ label {
 }
 
 .message-list li a {
-    color: #ddd;
+    color: #777;
 }
 
 .message-list li:hover {
@@ -5370,7 +5379,7 @@ label {
 
 .message-list li.unread a {
     font-weight: 600;
-    color: #FFF !important;
+    color: #555 !important;
 }
 
 .message-list li.blue-dot .col-mail-1 .dot {
@@ -5452,7 +5461,7 @@ label {
 }
 
 .mail-list a.active {
-    background: #000000;
+    background: #fff3f0;
     border-left: 2px solid #ff5722 !important;
     border-radius: 0;
 }
@@ -5570,7 +5579,7 @@ label {
 }
 
 .tdl-holder li span {
-    margin-left: 30px;
+    margin: 0 30px;
     font-family: 'Roboto', sans-serif;
     vertical-align: middle;
     -webkit-transition: all 0.2s linear;
@@ -5589,8 +5598,8 @@ label {
 }
 
 .tdl-holder label:hover {
-    background-color: #070713;
-    color: #abafb3;
+    background-color: #f8f9fa;
+    color: #607d8b;
 }
 
 .tdl-holder label:hover a {
@@ -5599,9 +5608,11 @@ label {
 
 .tdl-holder label a {
     border-radius: 50%;
-    color: #abafb3;
+    color: #607d8b;
     display: none;
-    float: right;
+    right: 10px;
+    top: 0;
+    position: absolute;
     font-weight: bold;
     line-height: normal;
     height: 16px;
@@ -5663,7 +5674,6 @@ label {
 }
 
 thead tr th {
-    color: #dddddd;
     font-weight: 500;
 }
 
@@ -5679,7 +5689,7 @@ tbody tr th {
 
 tbody tr td {
     font-family: 'Roboto', sans-serif;
-    color: #abafb3;
+    color: #607d8b;
 }
 
 tbody tr td:last-child {
@@ -5724,10 +5734,6 @@ tbody tr td:last-child {
     border-top: 1px solid rgba(120, 130, 140, 0.13);
     padding: 0.75rem;
     vertical-align: top;
-}
-
-.table-hover tbody tr:hover {
-    background-color: #000613
 }
 
 .search-action {
@@ -5816,19 +5822,19 @@ tbody tr td:last-child {
 }
 
 .login-form {
-    background: #0B0C21;
+    background: #FFFFFF;
     padding: 30px 30px 20px;
     border-radius: 2px;
 }
 
 .login-form h4 {
-    color: #dddddd;
+    color: #444;
     text-align: center;
     margin-bottom: 50px;
 }
 
 .login-form .checkbox {
-    color: #dddddd;
+    color: #444;
 }
 
 .login-form .checkbox label {
@@ -5844,7 +5850,7 @@ tbody tr td:last-child {
 }
 
 .login-form label {
-    color: #dddddd;
+    color: #444;
     text-transform: uppercase;
 }
 
@@ -5910,15 +5916,7 @@ tbody tr td:last-child {
 
 .dd-handle,
 .dd3-content {
-    color: #fff!important;
-    border: 1px solid transparent;
-    background: transparent;
-}
-
-#nestable2 .dd-handle {
-    color: #fff!important;
-    border: 1px solid transparent;
-    background: transparent;
+    color: #000!important;
 }
 
 .profiletimeline {
@@ -5991,15 +5989,10 @@ tbody tr td:last-child {
     margin-bottom: 10px !important;
 }
 
-.nav-tabs .nav-link:focus,
-.nav-tabs .nav-link:hover {
-    border-color: transparent;
-}
-
 .customtab li a.nav-link,
 .profile-tab li a.nav-link {
     border: 0 none;
-    color: #dddddd;
+    color: #007bff;
     padding: 15px 20px;
 }
 
@@ -6215,14 +6208,6 @@ tbody tr td:last-child {
 /* Calendar
 ================================================== */
 
-.pignose-calendar-top-month {
-    color: #ddd!important
-}
-
-.pignose-calendar-top-icon {
-    color: #ddd!important
-}
-
 
 /* =============
    Calendar
@@ -6387,7 +6372,7 @@ tbody tr td:last-child {
 }
 
 .cpu-load {
-    /* height: 345px;*/
+    /*height: 345px;*/
 }
 
 .morris-hover {
@@ -6608,7 +6593,7 @@ tbody tr td:last-child {
 }
 
 .media-body p {
-    color: #ffffff;
+    color: #000;
     line-height: 15px;
 }
 
@@ -6649,6 +6634,12 @@ tbody tr td:last-child {
 .vmap {
     width: 100%;
     height: 400px;
+    background: #fff!important;
+}
+
+.jqvmap-zoomin,
+.jqvmap-zoomout {
+    background: #b1b1b1;
 }
 
 .dark-browse-input-box {
@@ -7020,7 +7011,7 @@ tbody tr td:last-child {
     height: 100%;
     position: fixed;
     width: 100%;
-    background: #070713;
+    background: #FAFAFA;
 }
 
 .error-box .footer {
@@ -7079,7 +7070,7 @@ tbody tr td:last-child {
 
 /*  To make Responsive
 ---------------------------------------------------------------------- /
-* 1 - media screen and (max-width: 1750px)
+*	1 - media screen and (max-width: 1750px)
 *   2 - media screen and (max-width: 1680px)
 *   3 - media screen and (max-width: 1280px)
 *   4 - media screen and (max-width: 1199px)
@@ -7352,43 +7343,7 @@ only screen and (min-resolution: 2dppx) {
 
 /*---------------------------------------------------------------*/
 
-
-/*Custom css*/
-
-@media (max-width: 1400px) {
-    .responsive-50 {
-        max-width: 50%;
-        flex: 50%;
-    }
-    .responsive-100 {
-        max-width: 100%;
-        flex: 100%;
-    }
-}
-
-@media (max-width: 992px) {
-    .responsive-50 {
-        max-width: 100%;
-        flex: 100%;
-    }
-}
-
-.invoice-logo-wrap {
-    display: block;
-}
-
 @media (max-width: 1200px) {
-    .responsive-md-100 {
-        max-width: 100%;
-        flex: 100%;
-    }
-    .responsive-md-6 {
-        max-width: 50%;
-        flex: 50%;
-    }
-    .responsive-md-6 .peity {
-        margin-bottom: 30px;
-    }
     .peity {
         margin: 0 auto 30px auto;
         display: block;
@@ -7401,24 +7356,6 @@ only screen and (min-resolution: 2dppx) {
 @media (max-width: 992px) {
     .stat-widget-one .stat-content {
         margin-left: 15px;
-    }
-}
-
-@media (max-width: 768px) {
-    .peity {
-        margin: 0 auto 30px auto;
-        display: block;
-    }
-    .responsive-sm-6 {
-        max-width: 50%;
-        flex: 50%;
-    }
-    .responsive-md-6 {
-        max-width: 100%;
-        flex: 100%;
-    }
-    .card-content .btn {
-        padding: 7px 6px;
     }
 }
 
@@ -7457,6 +7394,34 @@ only screen and (min-resolution: 2dppx) {
 }
 
 
+/*Custom css*/
+
+@media (max-width: 1400px) {
+    .responsive-50 {
+        max-width: 50%;
+        flex: 50%;
+    }
+    .responsive-100 {
+        max-width: 100%;
+        flex: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .responsive-md-100 {
+        max-width: 100%;
+        flex: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .responsive-50 {
+        max-width: 100%;
+        flex: 100%;
+    }
+}
+
+
 /*Sparkline Chart*/
 
 .jqstooltip {
@@ -7474,5 +7439,5 @@ only screen and (min-resolution: 2dppx) {
 }
 
 .color-light {
-    color: #1b263a;
+    color: #e7ecf5;
 }

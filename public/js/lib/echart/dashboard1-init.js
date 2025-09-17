@@ -152,7 +152,6 @@ $(document).ready(function() {
     window.onresize = function() {
         rainChart.resize();
         npChart.resize();
-
     };
 
 
