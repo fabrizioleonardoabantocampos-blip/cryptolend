@@ -8,7 +8,7 @@
 @import url(../icons/themify-icons/themify-icons.css);
 @import url(../icons/flag-icon-css/flag-icon.min.css);
 @import url(../icons/material-design-iconic-font/css/materialdesignicons.min.css);
-@import url(../public/css/lib/bootstrap/bootstrap.min.css);
+@import url(../css/lib/bootstrap/bootstrap.min.css);
 @import url(helper.css);
 @import url(spinners.css);
 @import url(animate.css);
@@ -606,9 +606,9 @@ h6 {
     width: 24px;
 }
 
-.header .top-navbar .navbar-header .navbar-brand b img {
+/* .header .top-navbar .navbar-header .navbar-brand b img {
     max-width: 100%;
-}
+} */
 
 .header .top-navbar .navbar-nav>.nav-item>.nav-link {
     padding-left: 0.75rem;
